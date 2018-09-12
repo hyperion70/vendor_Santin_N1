@@ -1,0 +1,5 @@
+CMD_SET_CPU_CORE_MIN com.imangi.templerun2 3
+CMD_SET_CLUSTER_CPU_CORE_MIN com.tencent.tmgp.sgame 0 4
+CMD_SET_CLUSTER_CPU_CORE_MAX com.tencent.tmgp.sgame 0 4
+CMD_SET_CLUSTER_CPU_CORE_MIN com.tencent.tmgp.sgame 1 2
+CMD_SET_CLUSTER_CPU_CORE_MAX com.tencent.tmgp.sgame 1 2
