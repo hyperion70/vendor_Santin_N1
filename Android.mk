@@ -19,15 +19,8 @@ ifneq ($(filter N1, $(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libaudiocustparam
 LOCAL_SRC_FILES_64 := vendor/lib64/libaudiocustparam.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libaudiocustparam
 LOCAL_SRC_FILES_32 := vendor/lib/libaudiocustparam.so
-LOCAL_MULTILIB := 32
+LOCAL_MULTILIB := both
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
@@ -36,32 +29,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libmtkcam_fwkutils
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB := 32
+LOCAL_MULTILIB := both
+LOCAL_SRC_FILES_64 := vendor/lib64/libmtkcam_fwkutils.so
 LOCAL_SRC_FILES_32 := vendor/lib/libmtkcam_fwkutils.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libmtkcam_fwkutils
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MULTILIB := 64
-LOCAL_SRC_FILES_64 := vendor/lib64/libmtkcam_fwkutils.so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libdpframework
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX = .so
-LOCAL_MULTILIB := 32
-LOCAL_SRC_FILES_32 := vendor/lib/libdpframework.so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libdpframework
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX = .so
-LOCAL_MULTILIB := 64
+LOCAL_MULTILIB := both
 LOCAL_SRC_FILES_64 := vendor/lib64/libdpframework.so
+LOCAL_SRC_FILES_32 := vendor/lib/libdpframework.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -125,16 +104,6 @@ LOCAL_SRC_FILES_32 := vendor/lib/libRSDriver_mtk.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := mtk-ril
-LOCAL_SRC_FILES_64 := vendor/lib64/mtk-ril.so
-LOCAL_SRC_FILES_32 := vendor/lib/mtk-ril.so
-LOCAL_PROPRIETARY_MODULE := true
-LOCAL_MULTILIB := both
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libmtkplayer
 LOCAL_SRC_FILES_64 := vendor/lib64/libmtkplayer.so
 LOCAL_SRC_FILES_32 := vendor/lib/libmtkplayer.so
@@ -144,22 +113,15 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE = librilmtk-prop-md2
-LOCAL_MODULE_CLASS = STATIC_LIBRARIES
-LOCAL_MODULE_SUFFIX = .a
-LOCAL_PROPRIETARY_MODULE = true
-LOCAL_UNINSTALLABLE_MODULE = true
-LOCAL_MULTILIB = 64
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE = librilmtk-prop-md2
-LOCAL_MODULE_CLASS = STATIC_LIBRARIES
-LOCAL_MODULE_SUFFIX = .a
-LOCAL_PROPRIETARY_MODULE = true
-LOCAL_UNINSTALLABLE_MODULE = true
-LOCAL_MULTILIB = 32
-include $(BUILD_PREBUILT)
+# TODO: gradlew build https://github.com/LineageOS/android_packages_apps_YahooWeatherProvider
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := YahooWeatherProvider
+#LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_SUFFIX := .apk
+#LOCAL_MODULE_CLASS := APPS
+#LOCAL_CERTIFICATE := PRESIGNED
+#include $(BUILD_PREBUILT)
 
 endif
+
