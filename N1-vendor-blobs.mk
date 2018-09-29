@@ -28,7 +28,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/lib64/libjni_fancycolor.so:system/lib64/libjni_fancycolor.so \
     vendor/Santin/N1/lib64/libjni_filtershow_filters.so:system/lib64/libjni_filtershow_filters.so \
     vendor/Santin/N1/lib64/libjni_stereoapplication.so:system/lib64/libjni_stereoapplication.so \
-    vendor/Santin/N1/lib64/libnetutils.so:system/lib64/libnetutils.so \
     vendor/Santin/N1/lib64/libxml2.so:system/lib64/libxml2.so \
     vendor/Santin/N1/lib64/libjni_depthgenerator.so:system/lib64/libjni_depthgenerator.so \
     vendor/Santin/N1/lib64/libjni_jpegstream.so:system/lib64/libjni_jpegstream.so \
@@ -66,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
     vendor/Santin/N1/lib/libjni_stereoapplication.so:system/lib/libjni_stereoapplication.so \
     vendor/Santin/N1/lib/liblogwrap.so:system/lib/liblogwrap.so \
-    vendor/Santin/N1/lib/libnetutils.so:system/lib/libnetutils.so \
     vendor/Santin/N1/lib/libxml2.so:system/lib/libxml2.so \
     vendor/Santin/N1/lib/libjni_depthgenerator.so:system/lib/libjni_depthgenerator.so \
     vendor/Santin/N1/lib/libext2_com_err.so:system/lib/libext2_com_err.so \
