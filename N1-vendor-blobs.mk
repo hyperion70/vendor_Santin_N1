@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/lib64/libjni_depthgenerator.so:system/lib64/libjni_depthgenerator.so \
     vendor/Santin/N1/lib64/libjni_jpegstream.so:system/lib64/libjni_jpegstream.so \
     vendor/Santin/N1/lib64/libfs_mgr.so:system/lib64/libfs_mgr.so \
-    vendor/Santin/N1/lib64/libnfc-nci.so:system/lib64/libnfc-nci.so \
     vendor/Santin/N1/lib64/libttscompat.so:system/lib64/libttscompat.so \
     vendor/Santin/N1/lib64/libalsautils.so:system/lib64/libalsautils.so \
     vendor/Santin/N1/lib64/libmediatek_exceptionlog.so:system/lib64/libmediatek_exceptionlog.so \
@@ -46,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/lib64/libfp_client.so:system/lib64/libfp_client.so \
     vendor/Santin/N1/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/Santin/N1/lib64/libfpservice.so:system/lib64/libfpservice.so \
-    vendor/Santin/N1/lib64/libnfc_nci_jni.so:system/lib64/libnfc_nci_jni.so \
     vendor/Santin/N1/lib64/libfpjni.so:system/lib64/libfpjni.so \
     vendor/Santin/N1/lib64/libjni_jpegdecoder.so:system/lib64/libjni_jpegdecoder.so \
     vendor/Santin/N1/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
@@ -975,7 +973,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/vendor/firmware/catcher_filter_3_3g_n.bin:system/vendor/firmware/catcher_filter_3_3g_n.bin \
     vendor/Santin/N1/vendor/firmware/pcm_suspend_lpddr4_by_mp1.bin:system/vendor/firmware/pcm_suspend_lpddr4_by_mp1.bin \
     vendor/Santin/N1/vendor/firmware/catcher_filter_1_ulwctg_n.bin:system/vendor/firmware/catcher_filter_1_ulwctg_n.bin \
-    vendor/Santin/N1/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     vendor/Santin/N1/etc/init/mediadrmserver.rc:system/etc/init/mediadrmserver.rc \
     vendor/Santin/N1/etc/init/drmserver.rc:system/etc/init/drmserver.rc \
     vendor/Santin/N1/etc/init/dumpstate.rc:system/etc/init/dumpstate.rc \
@@ -989,7 +986,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/Santin/N1/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/Santin/N1/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/Santin/N1/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     vendor/Santin/N1/etc/media_codecs.xml:system/etc/media_codecs.xml \
     vendor/Santin/N1/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     vendor/Santin/N1/etc/sysconfig/whitelist_com.android.omadm.service.xml:system/etc/sysconfig/whitelist_com.android.omadm.service.xml \
@@ -999,9 +995,7 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml \
     vendor/Santin/N1/etc/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
     vendor/Santin/N1/etc/permissions/platform.xml:system/etc/permissions/platform.xml \
-    vendor/Santin/N1/etc/permissions/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     vendor/Santin/N1/etc/permissions/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-    vendor/Santin/N1/etc/permissions/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     vendor/Santin/N1/etc/permissions/com.mediatek.runningbooster.xml:system/etc/permissions/com.mediatek.runningbooster.xml \
     vendor/Santin/N1/etc/permissions/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
     vendor/Santin/N1/etc/permissions/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
@@ -1011,7 +1005,6 @@ PRODUCT_COPY_FILES += \
     vendor/Santin/N1/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/Santin/N1/etc/permissions/android.hardware.nfc.hcef.xml:system/etc/permissions/android.hardware.nfc.hcef.xml \
     vendor/Santin/N1/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
-    vendor/Santin/N1/etc/permissions/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     vendor/Santin/N1/etc/permissions/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
     vendor/Santin/N1/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/Santin/N1/etc/permissions/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
